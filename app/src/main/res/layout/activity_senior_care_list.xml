@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/theme_yellow"
+    tools:context=".Activity.SeniorCareListActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:paddingTop="10dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="현재 관리중인 시니어"
+            android:gravity="center"
+            android:textSize="24sp"
+            style="@style/Title"/>
+
+        <!-- List Container -->
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="310dp"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:background="@color/theme_black"
+                    android:padding="10dp"
+                    android:layout_margin="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="이름 : 박희수(conan)"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:text="연락처 : 010-9025-9114"
+                        android:singleLine="true"
+                        android:ellipsize="marquee"
+                        style="@style/InputTitle"/>
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:layout_width="310dp"
+                android:id="@+id/registerButton"
+                style="@style/ButtonStyle"
+                android:layout_gravity="center"
+                android:background="@color/theme_black"
+                android:layout_marginTop="20dp"
+                android:text="로그아웃"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

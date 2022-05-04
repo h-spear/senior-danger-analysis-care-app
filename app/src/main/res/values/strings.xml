@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SDA 보호자 앱</string>
+    <string name="splash_image_view_description">어플리케이션 실행 시 처음에 나오는 이미지입니다.</string>
+</resources>
