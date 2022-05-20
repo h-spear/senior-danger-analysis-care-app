@@ -3,26 +3,22 @@ package com.example.sda_care.Activity;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Intent;
-import android.content.SharedPreferences;
 import android.os.Bundle;
-import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.sda_care.MainActivity;
 import com.example.sda_care.R;
+import com.example.sda_care.Service.FirebaseAuthService;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.database.DatabaseReference;
 
 public class LoginActivity extends AppCompatActivity {
-    private FirebaseAuth mFirebaseAuth; //파이어베이스 인증처리
+    private FirebaseAuthService authService;
+    private FirebaseAuth firebaseAuth;
 
     private Button loginButton;
     private Button registerButton;
@@ -33,17 +29,19 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        mFirebaseAuth = FirebaseAuth.getInstance();
+
+        authService = new FirebaseAuthService();
+        firebaseAuth = authService.getAuth();
+
         editTextLoginId = (EditText) findViewById(R.id.editTextLoginId);
         editTextLoginPwd = (EditText) findViewById(R.id.editTextLoginPwd);
         loginButton = (Button) findViewById(R.id.loginButton);
-        registerButton = (Button) findViewById(R.id.registerButton);
         loginButton.setOnClickListener(view -> onClickLoginButton());
+        registerButton = (Button) findViewById(R.id.registerButton);
         registerButton.setOnClickListener(view -> onClickRegisterButton());
     }
 
     private void onClickLoginButton() {
-        // 로그인 버튼 클릭했을 때 이벤트 처리...
         String id = editTextLoginId.getText().toString();
         String pwd = editTextLoginPwd.getText().toString();
 
@@ -56,12 +54,11 @@ public class LoginActivity extends AppCompatActivity {
         }
         id += "@sda.com";
 
-        mFirebaseAuth.signInWithEmailAndPassword(id, pwd).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
+        firebaseAuth.signInWithEmailAndPassword(id, pwd).addOnCompleteListener(LoginActivity.this, new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-                    //FirebaseUser firebaseUser = mFirebaseAuth.getCurrentUser();
-                    Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                    Intent intent = new Intent(LoginActivity.this, SeniorCareListActivity.class);
                     startActivity(intent);
                     finish();
                 } else {
@@ -72,7 +69,6 @@ public class LoginActivity extends AppCompatActivity {
     }
 
     private void onClickRegisterButton() {
-        // 회원가입 버튼 클릭했을 때 이벤트 처리...
         Intent intent = new Intent(LoginActivity.this, RegisterActivity.class);
         startActivity(intent);
     }

@@ -24,6 +24,7 @@
             android:layout_marginBottom="20dp"/>
 
         <TextView
+            android:id="@+id/textViewDangerMsg"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
@@ -31,7 +32,7 @@
             android:text="관리중인 시니어 아무개님에 대한\n위험 상황이 인지되었습니다."/>
 
         <LinearLayout
-            android:layout_width="310dp"
+            android:layout_width="320dp"
             android:layout_height="wrap_content"
             android:orientation="vertical"
             android:layout_gravity="center"
@@ -41,45 +42,59 @@
             android:layout_margin="10dp">
 
             <TextView
+                android:id="@+id/textViewDangerSeniorName"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:text="이름 : 박희수(conan)"
-                android:singleLine="true"
-                android:ellipsize="marquee"
+                android:textColor="@color/white"
                 style="@style/InputTitle"/>
 
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="12sp"
-                android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
-                android:singleLine="true"
-                android:ellipsize="marquee"
-                style="@style/InputTitle"/>
-
-            <TextView
+                android:id="@+id/textViewDangerSeniorPhone"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:textSize="12sp"
                 android:text="연락처 : 010-9025-9114"
-                android:singleLine="true"
-                android:ellipsize="marquee"
+                android:textColor="@color/white"
+                style="@style/InputTitle"/>
+
+            <TextView
+                android:id="@+id/textViewDangerSeniorAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="12sp"
+                android:text="주소 : 서울특별시 동대문구 휘경동 123-123 101호"
+                android:textColor="@color/white"
                 style="@style/InputTitle"/>
         </LinearLayout>
 
         <ImageView
-            android:layout_width="310dp"
-            android:layout_height="310dp"
+            android:id="@+id/dangerImageView"
+            android:layout_width="320dp"
+            android:layout_height="240dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
             android:background="@color/theme_black"/>
 
         <Button
-            android:layout_width="310dp"
-            android:id="@+id/registerButton"
+            android:layout_width="320dp"
+            android:id="@+id/dangerSeniorCallButton"
             style="@style/ButtonStyle"
             android:layout_gravity="center"
             android:background="@color/theme_black"
             android:layout_marginTop="20dp"
             android:text="전화하기"/>
+
+        <Button
+            android:layout_width="320dp"
+            android:id="@+id/dangerSeniorOkButton"
+            style="@style/ButtonStyle"
+            android:layout_gravity="center"
+            android:background="@color/theme_black"
+            android:layout_marginTop="20dp"
+            android:text="확인"/>
     </LinearLayout>
 </LinearLayout>

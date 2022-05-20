@@ -8,6 +8,7 @@ public class UserAccount {
     private String phone;
     private String address;
     private String registrationToken;
+    private String seniorIdToken;
 
     public UserAccount(){}
 
