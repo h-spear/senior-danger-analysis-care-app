@@ -12,6 +12,7 @@ import android.util.Log;
 
 import com.example.sda_care.Activity.DangerIdentificationActivity;
 import com.example.sda_care.Activity.SeniorCareListActivity;
+import com.example.sda_care.Class.PreferenceManager;
 import com.example.sda_care.R;
 
 import androidx.core.app.NotificationCompat;
@@ -28,19 +29,20 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         super.onMessageReceived(remoteMessage);
 
         Log.e(TAG, "onMessageReceived 호출됨.");
-        //title = remoteMessage.getData().get("title");
-        title = remoteMessage.getNotification().getTitle();
+        title = remoteMessage.getData().get("title");
+        //title = remoteMessage.getNotification().getTitle();
         Log.e(TAG, ""+title);
-        //msg = remoteMessage.getData().get("body");
-        msg = remoteMessage.getNotification().getBody();
+        msg = remoteMessage.getData().get("body");
+        //msg = remoteMessage.getNotification().getBody();
         Log.e(TAG, "" + msg);
         DangerIdentificationActivity.imageName = remoteMessage.getData().get("message");
 
-        if (remoteMessage.getNotification() != null) {
+        //if (remoteMessage.getNotification() != null) {
+        if (remoteMessage.getData() != null) {
             if (DangerIdentificationActivity.imageName.length() > 2) {
-                sendNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody(), DangerIdentificationActivity.class);
+                sendNotification(title, msg, DangerIdentificationActivity.class);
             } else {
-                sendNotification(remoteMessage.getNotification().getTitle(), remoteMessage.getNotification().getBody(), SeniorCareListActivity.class);
+                sendNotification(title, msg, SeniorCareListActivity.class);
             }
         }
     }
@@ -61,7 +63,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
         NotificationCompat.Builder mBuilder=new NotificationCompat.Builder(this, channelId)
                 .setLargeIcon(BitmapFactory.decodeResource(getResources(), R.drawable.ic_launcher_foreground))
                 .setContentTitle(title)
-                .setContentText(msg)
+                .setContentText(body)
                 .setAutoCancel(true)
                 .setPriority(NotificationCompat.PRIORITY_DEFAULT)
                 .setSound(RingtoneManager.getDefaultUri(RingtoneManager.TYPE_NOTIFICATION))

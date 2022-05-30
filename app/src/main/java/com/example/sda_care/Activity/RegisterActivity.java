@@ -135,7 +135,6 @@ public class RegisterActivity extends AppCompatActivity {
                     UserAccount account = new UserAccount();
                     account.setIdToken(firebaseUser.getUid());
                     account.setEmailId(firebaseUser.getEmail());
-                    account.setPassword(pwd);
                     account.setName(name);
                     account.setPhone(phone);
                     account.setAddress(address);

@@ -8,6 +8,7 @@ public class PreferenceManager {
     public static final String NAME = "name";
     public static final String ID_TOKEN = "id_token";
     public static final String PHONE = "phone";
+    public static final String ADDRESS = "address";
     private static final String DEFAULT_VALUE_STRING = null;
 
     private static SharedPreferences getPreferences(Context context) {

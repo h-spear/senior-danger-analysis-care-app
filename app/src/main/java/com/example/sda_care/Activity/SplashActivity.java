@@ -61,7 +61,8 @@ public class SplashActivity extends AppCompatActivity {
                     UserAccount userAccount = snapshot.getValue(UserAccount.class);
                     PreferenceManager.setString(context, PreferenceManager.NAME, userAccount.getName());
                     PreferenceManager.setString(context, PreferenceManager.ID_TOKEN, userAccount.getIdToken());
-                    PreferenceManager.setString(context, PreferenceManager.PHONE, userAccount.getPhone());
+                    PreferenceManager.setString(context, PreferenceManager.PHONE, userAccount.getPhone());;
+                    PreferenceManager.setString(context, PreferenceManager.ADDRESS, userAccount.getPhone());
 
                     Handler handler = new Handler();
                     handler.postDelayed(new Runnable() {

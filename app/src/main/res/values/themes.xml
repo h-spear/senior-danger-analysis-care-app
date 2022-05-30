@@ -32,11 +32,11 @@
     <style name="Title">
         <item name="android:textSize">50sp</item>
         <item name="android:textColor">@color/theme_black</item>
-        <item name="android:fontFamily">@font/sb_aggro_l</item>
+        <item name="android:fontFamily">@font/sb_aggro_m</item>
     </style>
 
     <style name="IdentificationActivityTitle">
-        <item name="android:fontFamily">@font/sb_aggro_l</item>
+        <item name="android:fontFamily">@font/sb_aggro_m</item>
         <item name="android:textSize">18sp</item>
         <item name="android:textAlignment">center</item>
         <item name="android:textColor">@color/theme_black</item>
